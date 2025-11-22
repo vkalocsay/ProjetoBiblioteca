@@ -87,6 +87,8 @@ public class Usuario {
         this.datacadastro = datacadastro;
     }
 
+
+    
     public Integer getEmprestimosativos() {
         return emprestimosativos;
     }
@@ -94,7 +96,7 @@ public class Usuario {
     public void setEmprestimosativos(Integer emprestimosativos) {
         this.emprestimosativos = emprestimosativos;
     }
-    
+
 }
 
 
