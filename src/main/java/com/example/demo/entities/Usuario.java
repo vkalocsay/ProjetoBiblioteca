@@ -94,4 +94,8 @@ public class Usuario {
     public void setEmprestimosativos(Integer emprestimosativos) {
         this.emprestimosativos = emprestimosativos;
     }
+    
 }
+
+
+
