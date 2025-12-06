@@ -16,16 +16,16 @@ public class Livro {
     private Instant dataPublicacao;
     private String autor;
     private String editora;
-    private Instant anopublicacao;
+    private Instant anoPublicacao;
     private Long isbn;
     private String genero;
-    private Long quantidadeexemplares;
-    private Long exemplaresdisponiveis;
+    private Long quantidaDeExemplares;
+    private Long exemplaresDisponiveis;
 
     public Livro () {
     }
 
-    public Livro(Long id, String titulo, String descricao, Double preco, Instant dataPublicacao, String autor, String editora, Instant anopublicacao, Long isbn, String genero, Long quantidadeexemplares, Long exemplaresdisponiveis) {
+    public Livro(Long id, String titulo, String descricao, Double preco, Instant dataPublicacao, String autor, String editora, Instant anoPublicacao, Long isbn, String genero, Long quantidaDeExemplares, Long exemplaresDisponiveis) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
@@ -33,11 +33,11 @@ public class Livro {
         this.dataPublicacao = dataPublicacao;
         this.autor = autor;
         this.editora = editora;
-        this.anopublicacao = anopublicacao;
+        this.anoPublicacao = anoPublicacao;
         this.isbn = isbn;
         this.genero = genero;
-        this.quantidadeexemplares = quantidadeexemplares;
-        this.exemplaresdisponiveis = exemplaresdisponiveis;
+        this.quantidaDeExemplares = quantidaDeExemplares;
+        this.exemplaresDisponiveis = exemplaresDisponiveis;
     }
 
     public Long getId() {
@@ -96,12 +96,12 @@ public class Livro {
         this.editora = editora;
     }
 
-    public Instant getAnopublicacao() {
-        return anopublicacao;
+    public Instant getAnoPublicacao() {
+        return anoPublicacao;
     }
 
-    public void setAnopublicacao(Instant anopublicacao) {
-        this.anopublicacao = anopublicacao;
+    public void setAnoPublicacao(Instant anopublicacao) {
+        this.anoPublicacao = anopublicacao;
     }
 
     public Long getIsbn() {
@@ -120,19 +120,19 @@ public class Livro {
         this.genero = genero;
     }
 
-    public Long getQuantidadeexemplares() {
-        return quantidadeexemplares;
+    public Long getQuantidaDeExemplares() {
+        return quantidaDeExemplares;
     }
 
-    public void setQuantidadeexemplares(Long quantidadeexemplares) {
-        this.quantidadeexemplares = quantidadeexemplares;
+    public void setQuantidaDeExemplares(Long quantidaDeExemplares) {
+        this.quantidaDeExemplares = quantidaDeExemplares;
     }
 
-    public Long getExemplaresdisponiveis() {
-        return exemplaresdisponiveis;
+    public Long getExemplaresDisponiveis() {
+        return exemplaresDisponiveis;
     }
 
-    public void setExemplaresdisponiveis(Long exemplaresdisponiveis) {
-        this.exemplaresdisponiveis = exemplaresdisponiveis;
+    public void setExemplaresDisponiveis(Long exemplaresDisponiveis) {
+        this.exemplaresDisponiveis = exemplaresDisponiveis;
     }
 }

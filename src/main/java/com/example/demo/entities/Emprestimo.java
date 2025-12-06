@@ -11,9 +11,9 @@ public class Emprestimo {
     @Column(length = 11)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Instant dataemprestimo;
-    private Instant datadevolucaoprevista;
-    private Instant datadevolucaoreal;
+    private Instant dataEmprestimo;
+    private Instant dataDevolucaoPrevista;
+    private Instant dataDevolucaoReal;
     private String status;
     private String livro;
     private String usuario;
@@ -21,11 +21,11 @@ public class Emprestimo {
     public Emprestimo() {
     }
 
-    public Emprestimo(Long id, Instant dataemprestimo, Instant datadevolucaoprevista, Instant datadevolucaoreal, String status, String livro, String usuario) {
+    public Emprestimo(Long id, Instant dataEmprestimo, Instant dataDevolucaoPrevista, Instant dataDevolucaoReal, String status, String livro, String usuario) {
         this.id = id;
-        this.dataemprestimo = dataemprestimo;
-        this.datadevolucaoprevista = datadevolucaoprevista;
-        this.datadevolucaoreal = datadevolucaoreal;
+        this.dataEmprestimo = dataEmprestimo;
+        this.dataDevolucaoPrevista = dataDevolucaoPrevista;
+        this.dataDevolucaoReal = dataDevolucaoReal;
         this.status = status;
         this.livro = livro;
         this.usuario = usuario;
@@ -39,28 +39,28 @@ public class Emprestimo {
         this.id = id;
     }
 
-    public Instant getDataemprestimo() {
-        return dataemprestimo;
+    public Instant getDataEmprestimo() {
+        return dataEmprestimo;
     }
 
-    public void setDataemprestimo(Instant dataemprestimo) {
-        this.dataemprestimo = dataemprestimo;
+    public void setDataEmprestimo(Instant dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
     }
 
-    public Instant getDatadevolucaoprevista() {
-        return datadevolucaoprevista;
+    public Instant getDataDevolucaoPrevista() {
+        return dataDevolucaoPrevista;
     }
 
-    public void setDatadevolucaoprevista(Instant datadevolucaoprevista) {
-        this.datadevolucaoprevista = datadevolucaoprevista;
+    public void setDataDevolucaoPrevista(Instant dataDevolucaoPrevista) {
+        this.dataDevolucaoPrevista = dataDevolucaoPrevista;
     }
 
-    public Instant getDatadevolucaoreal() {
-        return datadevolucaoreal;
+    public Instant getDataDevolucaoReal() {
+        return dataDevolucaoReal;
     }
 
-    public void setDatadevolucaoreal(Instant datadevolucaoreal) {
-        this.datadevolucaoreal = datadevolucaoreal;
+    public void setDataDevolucaoReal(Instant dataDevolucaoReal) {
+        this.dataDevolucaoReal = dataDevolucaoReal;
     }
 
     public String getStatus() {

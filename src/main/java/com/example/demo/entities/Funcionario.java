@@ -16,18 +16,18 @@ public class Funcionario {
     private String nome;
     private Integer matricula;
     private String cargo;
-    private Instant dataadmissao;
+    private Instant dataAdmissao;
     private Long salario;
 
     public Funcionario() {
     }
 
-    public Funcionario(Long id, String nome, Integer matricula, String cargo, Instant dataadmissao, Long salario) {
+    public Funcionario(Long id, String nome, Integer matricula, String cargo, Instant dataAdmissao, Long salario) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
         this.cargo = cargo;
-        this.dataadmissao = dataadmissao;
+        this.dataAdmissao = dataAdmissao;
         this.salario = salario;
     }
 
@@ -63,12 +63,11 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public Instant getDataadmissao() {
-        return dataadmissao;
+    public Instant getDataAdmissao() {
+        return dataAdmissao;
     }
 
-    public void setDataadmissao(Instant dataadmissao) {
-        this.dataadmissao = dataadmissao;
+    public void setDataAdmissao(Instant dataAdmissao) { this.dataAdmissao = dataAdmissao;
     }
 
     public Long getSalario() {

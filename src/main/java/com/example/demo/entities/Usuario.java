@@ -15,20 +15,20 @@ public class Usuario {
     private String endereco;
     private String telefone;
     private String email;
-    private Instant datacadastro;
-    private Integer emprestimosativos;
+    private Instant dataCadastro;
+    private Integer emprestimosAtivos;
 
     public Usuario() {
     }
-    public Usuario(Long id, String nome, String cpf, String endereco, String telefone, String email, Instant datacadastro, Integer emprestimosativos) {
+    public Usuario(Long id, String nome, String cpf, String endereco, String telefone, String email, Instant dataCadastro, Integer emprestimosAtivos) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-        this.datacadastro = datacadastro;
-        this.emprestimosativos = emprestimosativos;
+        this.dataCadastro = dataCadastro;
+        this.emprestimosAtivos = emprestimosAtivos;
     }
 
     public Long getId() {
@@ -79,22 +79,22 @@ public class Usuario {
         this.email = email;
     }
 
-    public Instant getDatacadastro() {
-        return datacadastro;
+    public Instant getDataCadastro() {
+        return dataCadastro;
     }
 
-    public void setDatacadastro(Instant datacadastro) {
-        this.datacadastro = datacadastro;
+    public void setDataCadastro(Instant dataCadastro) {
+        this.dataCadastro = dataCadastro;
     }
 
 
     
-    public Integer getEmprestimosativos() {
-        return emprestimosativos;
+    public Integer getEmprestimosAtivos() {
+        return emprestimosAtivos;
     }
 
-    public void setEmprestimosativos(Integer emprestimosativos) {
-        this.emprestimosativos = emprestimosativos;
+    public void setEmprestimosAtivos(Integer emprestimosAtivos) {
+        this.emprestimosAtivos = emprestimosAtivos;
     }
 
 }

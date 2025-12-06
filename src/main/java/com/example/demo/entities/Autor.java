@@ -10,21 +10,20 @@ public class Autor {
     @Id
     @Column(length = 11)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
     private String nome;
     private String nacionalidade;
-    private Date datanascimento;
+    private Date dataNascimento;
     private String biografia;
 
     public Autor() {
     }
 
-    public Autor(Long id, String nome, String nacionalidade, Date datanascimento, String biografia) {
+    public Autor(Long id, String nome, String nacionalidade, Date dataNascimento, String biografia) {
         this.id = id;
         this.nome = nome;
         this.nacionalidade = nacionalidade;
-        this.datanascimento = datanascimento;
+        this.dataNascimento = dataNascimento;
         this.biografia = biografia;
     }
 
@@ -52,12 +51,12 @@ public class Autor {
         this.nacionalidade = nacionalidade;
     }
 
-    public Date getDatanascimento() {
-        return datanascimento;
+    public Date getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setDatanascimento(Date datanascimento) {
-        this.datanascimento = datanascimento;
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getBiografia() {
